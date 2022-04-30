@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiPractica2.Android", "ApiPractica2\ApiPractica2.Android\ApiPractica2.Android.csproj", "{247D15AB-B7FD-4A0C-8EFD-7DA2D81AA337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiPractica2", "ApiPractica2\ApiPractica2\ApiPractica2.csproj", "{AC370B00-44AE-4F5B-8469-1CBD83B88AEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{247D15AB-B7FD-4A0C-8EFD-7DA2D81AA337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247D15AB-B7FD-4A0C-8EFD-7DA2D81AA337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247D15AB-B7FD-4A0C-8EFD-7DA2D81AA337}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{247D15AB-B7FD-4A0C-8EFD-7DA2D81AA337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247D15AB-B7FD-4A0C-8EFD-7DA2D81AA337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{247D15AB-B7FD-4A0C-8EFD-7DA2D81AA337}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AC370B00-44AE-4F5B-8469-1CBD83B88AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC370B00-44AE-4F5B-8469-1CBD83B88AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC370B00-44AE-4F5B-8469-1CBD83B88AEF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AC370B00-44AE-4F5B-8469-1CBD83B88AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC370B00-44AE-4F5B-8469-1CBD83B88AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC370B00-44AE-4F5B-8469-1CBD83B88AEF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1F2C90A-74E3-49BE-9228-FCCE033687E9}
+	EndGlobalSection
+EndGlobal
