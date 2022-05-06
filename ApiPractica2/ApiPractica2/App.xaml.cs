@@ -8,8 +8,10 @@ namespace ApiPractica2
 {
     public partial class App : Application
     {
+        public static CatManager CatManager { get; set; }
         public App()
         {
+
             InitializeComponent();
 
             CatManager = new CatManager(new RestService());

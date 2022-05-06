@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ApiPractica2.Services
 {
-    public class IrestService
+    public interface IRestService
     {
-        Task<List<CatModel>> GetTodoItemAsync();
-        Task SaveTodoItemAsync(CatModel item, bool isNewItem);
-        Task DeleteTodoItemAsync(CatModel item);
+        Task<List<CatModel>> GetCatItemAsync();
+        Task SaveCatItemAsync(CatModel item, bool isNewItem);
+        Task DeleteCatItemAsync(CatModel item);
     }
 }

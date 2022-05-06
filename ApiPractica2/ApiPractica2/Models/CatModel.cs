@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ApiPractica2.Models
 {
-    class CatModel
+   public class CatModel
     {
         public string Id { get; set; }
         public string Name { get; set; }

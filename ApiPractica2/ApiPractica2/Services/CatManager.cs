@@ -6,26 +6,27 @@ using ApiPractica2.Models;
 
 namespace ApiPractica2.Services
 {
-    class CatManager
+     public class CatManager
     {
-        IrestService service;
+        IRestService service;
 
-        public CatManager(IrestService restService)
+        public CatManager(IRestService restService)
         {
             service = restService;
         }
-        public Task<List<CatModel>> GetTodoItemModels()
+        public Task<List<CatModel>> GetCatItemModels()
         {
-            return service.GetTodoItemAsync();
+            return service.GetCatItemAsync();
         }
 
         public Task DeleteTodoAsync(CatModel item)
         {
-            return service.DeleteTodoItemAsync(item);
+            return service.DeleteCatItemAsync(item);
         }
-        public Task SaveItemAsync(CatModel todoItem, bool isNewItem = false)
+
+        public Task SaveItemAsync(CatModel todoItem, bool isNewItem)
         {
-            return service.SaveTodoItemAsync(todoItem, isNewItem);
+            return service.SaveCatItemAsync(todoItem, isNewItem);
         }
     }
 }

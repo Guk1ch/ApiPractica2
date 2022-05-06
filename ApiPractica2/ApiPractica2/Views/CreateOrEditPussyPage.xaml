@@ -4,9 +4,13 @@
              x:Class="ApiPractica2.Views.CreateOrEditPussyPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label HorizontalOptions="CenterAndExpand" Text="Имя зверя" />
+            <Entry Placeholder="введите текст" Text="{Binding Name}"/>
+            <Label HorizontalOptions="CenterAndExpand" Text="Цвет" />
+            <Entry Placeholder="введите текст" Text="{Binding Color}"/>
+            <Switch IsToggled="{Binding Gender}" />
+            <Button Clicked="SaveButton_Clicked" Text="Сохранить" />
+            <Button Clicked="DeleteButton_Clicked" Text="Удалить" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

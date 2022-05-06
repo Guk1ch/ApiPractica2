@@ -4,13 +4,12 @@ using System.Text;
 using ApiPractica2.Models;
 using System.Diagnostics;
 using System.Net.Http;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace ApiPractica2.Services
 {
-   public class RestService : IrestService 
+   public class RestService : IRestService 
     {
         HttpClient client;
         JsonSerializerOptions serializerOptions;
@@ -18,16 +17,16 @@ namespace ApiPractica2.Services
         public RestService()
         {
             var httpClientHAndler = new HttpClientHandler();
-            httpClientHandler.ServerCertificateCustomValidationCallback =
+            httpClientHAndler.ServerCertificateCustomValidationCallback =
            (message, cert, chain, errors) => { return true; };
-            client = new HttpClient(httpClientHandler);
+            client = new HttpClient(httpClientHAndler);
             serializerOptions = new JsonSerializerOptions()
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
                 WriteIndented = true,
             };
         }
-        public async Task DeleteTodoItemAsync(CatModel item)
+        public async Task DeleteCatItemAsync(CatModel item)
         {
             Uri uri = new Uri(string.Format(Constants.RestUrl, item.Id));
             try
@@ -43,7 +42,7 @@ namespace ApiPractica2.Services
                 Debug.WriteLine($"@@@@@@@@@@//// {ex.Message}");
             }
         }
-        public async Task<List<CatModel>> GetTodoItemAsync()
+        public async Task<List<CatModel>> GetCatItemAsync()
         {
             CatItems = new List<CatModel>();
 
@@ -64,7 +63,7 @@ namespace ApiPractica2.Services
             }
             return CatItems;
         }
-        public async Task SaveTodoItemAsync(CatModel item, bool isNewItem)
+        public async Task SaveCatItemAsync(CatModel item, bool isNewItem)
         {
             Uri uri = new Uri(string.Format(Constants.RestUrl, string.Empty));
             try
